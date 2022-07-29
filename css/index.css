@@ -1,0 +1,110 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+.main-div{
+    margin: 50px;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between
+}
+
+.nav-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-item{
+    margin-right: 30px;
+    font-family: Roboto;
+    color: #1f2873;
+}
+
+nav img{
+    width: 100px;
+    margin-left: 100px;
+}
+
+nav .signin-btn{
+    margin-right: 100px;
+    padding: 0 24px; 
+    cursor: pointer; 
+    background-image: linear-gradient(to right, rgba(150,92,242,255), rgba(254,138,220,255));
+    border: 0px; 
+    border-radius: 20px;
+    color: white;
+    
+}
+.intro-section{
+    display: flex;
+    flex-direction: row;
+}
+.left-section{
+    display: flex;
+    flex-direction: column;
+    flex: 30%;
+}
+.left-section h1{
+    margin-top: 100px;
+    margin-left: 100px;
+   font-family: Roboto;
+   color: #1f2873;
+}
+.left-section h4{
+    margin-top: 50px;
+    margin-left: 100px;
+    font-family: Roboto;
+    color: #737794;
+}
+.learn-more-btn{
+    width: 150px;
+    padding: 10px 10px;
+    margin-top: 50px;
+    margin-left: 100px;
+    align-items: center;
+    background-image: linear-gradient(to right, rgba(150,92,242,255), rgba(254,138,220,255));
+    color: white;
+    border-radius: 20px;
+    border: 0px;
+}
+.imgs-div{
+    display: flex;
+    flex-direction: row;
+    flex: 50%;
+    
+}
+.vector-img{
+    width: 90px;
+}
+.intro-img{
+    width: 550px;
+    
+    position: relative;
+    right: 100px;
+
+}
+.vector-img{
+    position: relative;
+    top: 100px;
+    right: 30px;
+
+}
+.vector-dot{
+    position: relative;
+    top: 65px;
+    right: 60px;
+}
+body{
+    background-image: url('../images/backcover.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    background-size: 850px;
+    height: 280px;
+   
+}
