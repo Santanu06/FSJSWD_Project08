@@ -4,34 +4,29 @@
 }
 
 .main-div{
-    margin: 50px;
+    margin: 10px;
 }
 
 nav{
     display: flex;
     flex-direction: row;
-    justify-content:space-between
+    justify-content:space-between;
+    margin-top: 50px;
 }
 
 .nav-items {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: none;
 }
 
-.nav-item{
-    margin-right: 30px;
-    font-family: Roboto;
-    color: #1f2873;
-}
+
 
 nav img{
-    width: 100px;
-    margin-left: 100px;
+    width: 80px;
+    margin-left: 50px;
 }
 
 nav .signin-btn{
-    margin-right: 100px;
+    margin-right: 50px;
     padding: 0 24px; 
     cursor: pointer; 
     background-image: linear-gradient(to right, rgba(150,92,242,255), rgba(254,138,220,255));
@@ -42,12 +37,15 @@ nav .signin-btn{
 }
 .intro-section{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    
 }
 .left-section{
     display: flex;
     flex-direction: column;
     flex: 30%;
+    order: 2;
+    margin-bottom: 50px;
 }
 .left-section h1{
     margin-top: 100px;
@@ -76,35 +74,249 @@ nav .signin-btn{
     display: flex;
     flex-direction: row;
     flex: 50%;
-    
+    order: 1;
 }
 .vector-img{
-    width: 90px;
+    width: 50px;
 }
 .intro-img{
-    width: 550px;
+    width: 380px;
     
     position: relative;
-    right: 100px;
+    top: 30px;
+    right: 50px;
 
 }
 .vector-img{
     position: relative;
-    top: 100px;
-    right: 30px;
+    top: 150px;
+    left: 20px;
 
 }
 .vector-dot{
     position: relative;
-    top: 65px;
-    right: 60px;
+    top: 105px;
+    left: 10px;
+    width: 15px;
 }
 body{
     background-image: url('../images/backcover.svg');
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: left;
     background-size: cover;
-    background-size: 850px;
-    height: 280px;
+    background-size: 490px;
+    height: 420px;
    
+}
+
+@media screen and (min-width: 768px) {
+    /* .main-div{
+        margin: 50px;
+    }
+    .nav-items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .nav-items .nav-item{
+        margin-right: 20px;
+        align-items: center;
+        font-size: 16px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .nav-item.active-item{
+        color: #fe5e35;
+        
+    }
+    nav img{
+        width: 100px;
+        margin-left: 100px;
+    }
+    nav .signin-btn{
+        margin-right: 100px;
+        padding: 0 24px; 
+        cursor: pointer; 
+        background-image: linear-gradient(to right, rgba(150,92,242,255), rgba(254,138,220,255));
+        border: 0px; 
+        border-radius: 20px;
+        color: white;
+        
+    }
+    .intro-section{
+        display: flex;
+        flex-direction: row;
+    }
+    .left-section{
+        display: flex;
+        flex-direction: column;
+        flex: 30%;
+        order: unset;
+    }
+    .left-section h1{
+        margin-top: 100px;
+        margin-left: 100px;
+       font-family: Roboto;
+       color: #1f2873;
+    }
+    .left-section h4{
+        margin-top: 50px;
+        margin-left: 100px;
+        font-family: Roboto;
+        color: #737794;
+    }
+    .learn-more-btn{
+        width: 150px;
+        padding: 10px 10px;
+        margin-top: 50px;
+        margin-left: 100px;
+        align-items: center;
+        background-image: linear-gradient(to right, rgba(150,92,242,255), rgba(254,138,220,255));
+        color: white;
+        border-radius: 20px;
+        border: 0px;
+    }
+    .imgs-div{
+        display: flex;
+        flex-direction: row;
+        flex: 50%;
+        order: unset;
+    }
+    .vector-img{
+        width: 90px;
+    }
+    .intro-img{
+        width: 550px;
+        
+        position: relative;
+        right: 100px;
+    
+    }
+    .vector-img{
+        position: relative;
+        top: 100px;
+        right: 30px;
+    
+    }
+    .vector-dot{
+        position: relative;
+        top: 65px;
+        right: 60px;
+    }
+    body{
+        background-image: url('../images/backcover.svg');
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: cover;
+        background-size: 850px;
+        height: 280px;
+       
+    } */
+    .main-div{
+        margin: 50px;
+    }
+    
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between
+    }
+    
+    .nav-items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .nav-item{
+        margin-right: 30px;
+        font-family: Roboto;
+        color: #1f2873;
+    }
+    
+    nav img{
+        width: 100px;
+        margin-left: 100px;
+    }
+    
+    nav .signin-btn{
+        margin-right: 100px;
+        padding: 0 24px; 
+        cursor: pointer; 
+        background-image: linear-gradient(to right, rgba(150,92,242,255), rgba(254,138,220,255));
+        border: 0px; 
+        border-radius: 20px;
+        color: white;
+        
+    }
+    .intro-section{
+        display: flex;
+        flex-direction: row;
+    }
+    .left-section{
+        display: flex;
+        flex-direction: column;
+        flex: 30%;
+        order: unset;
+    }
+    .left-section h1{
+        margin-top: 100px;
+        margin-left: 100px;
+       font-family: Roboto;
+       color: #1f2873;
+    }
+    .left-section h4{
+        margin-top: 50px;
+        margin-left: 100px;
+        font-family: Roboto;
+        color: #737794;
+    }
+    .learn-more-btn{
+        width: 150px;
+        padding: 10px 10px;
+        margin-top: 50px;
+        margin-left: 100px;
+        align-items: center;
+        background-image: linear-gradient(to right, rgba(150,92,242,255), rgba(254,138,220,255));
+        color: white;
+        border-radius: 20px;
+        border: 0px;
+    }
+    .imgs-div{
+        display: flex;
+        flex-direction: row;
+        flex: 50%;
+        order: unset;
+    }
+    .vector-img{
+        width: 90px;
+    }
+    .intro-img{
+        width: 550px;
+        
+        position: relative;
+        right: 100px;
+    
+    }
+    .vector-img{
+        position: relative;
+        top: 100px;
+        right: 30px;
+    
+    }
+    .vector-dot{
+        position: relative;
+        top: 65px;
+        right: 60px;
+    }
+    body{
+        background-image: url('../images/backcover.svg');
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: cover;
+        background-size: 850px;
+        height: 280px;
+       
+    }
 }
